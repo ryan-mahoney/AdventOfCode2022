@@ -33,8 +33,7 @@ end)
 |> Enum.sort
 |> Enum.take(-3)
 |> Enum.reduce(0, fn calories, acc -> 
-    calories
-    |> Kernel.+(acc)
+    calories + acc
 end)
 
 IO.inspect(part_2)
